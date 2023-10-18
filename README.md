@@ -1,5 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## product url https://www.amazon.com/Apple-2023-MacBook-Laptop-chip/dp/B0C7638G25/ref=sr_1_2?crid=1ITQP2S99SG69&keywords=macbook+air&qid=1696305926&sprefix=macbook+air%2Caps%2C190&sr=8-2
 ## Getting Started
 
 First, run the development server:
