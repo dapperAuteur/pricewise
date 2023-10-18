@@ -6,6 +6,7 @@ import Product from "../model/product.model";
 import { getLowestPrice, getHighestPrice, getAveragePrice } from "../utils";
 import { revalidatePath } from "next/cache";
 import { generateEmailBody, sendEmail } from "../nodemailer";
+import { User } from "@/types";
 
 export async function scrapeAndStoreProduct(productUrl:string) {
   if (!productUrl) return;
