@@ -3,9 +3,10 @@ import Link from 'next/link'
 import React from 'react'
 
 const navIcons = [
-  { src: '/assets/icons/search.svg', alt: 'search' },
-  { src: '/assets/icons/black-heart.svg', alt: 'heart' },
-  { src: '/assets/icons/user.svg', alt: 'user' }
+  { src: '/assets/icons/search.svg', alt: 'search', link: '/' },
+  { src: '/assets/icons/black-heart.svg', alt: 'heart', link: '/' },
+  { src: '/assets/icons/user.svg', alt: 'user', link: '/' },
+  { src: '/assets/icons/frame.svg', alt: 'products', link: '/products' }
 ]
 
 const Navbar = () => {
@@ -23,14 +24,18 @@ const Navbar = () => {
         </Link>
         <div className='flex items-center gap-5'>
           {navIcons.map((icon) => (
-            <Image
-              key={icon.alt}
-              src={icon.src}
-              alt={icon.alt}
-              width={28}
-              height={28}
-              className='object-contain'
-            />
+            <Link
+              href={icon.link}
+              className=''>
+                <Image
+                  key={icon.alt}
+                  src={icon.src}
+                  alt={icon.alt}
+                  width={28}
+                  height={28}
+                  className='object-contain'
+                />
+            </Link>
           ))}
         </div>
       </nav>
