@@ -7,6 +7,7 @@ import React from 'react'
 import { formatNumber } from '@/lib/utils';
 import PriceInfoCard from '@/components/PriceInfoCard';
 import ProductCard from '@/components/ProductCard';
+import Modal from '@/components/Modal';
 
 type Props = {
   params: {id: string }
@@ -137,7 +138,7 @@ const ProductDetails = async ({params: {id}}: Props) => {
                 />
             </div>
           </div>
-          Modal
+          <Modal productId={id}/>
         </div>
       </div>
       <div className='flex flex-col gap-16'>
