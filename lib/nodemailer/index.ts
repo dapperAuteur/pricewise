@@ -2,15 +2,16 @@
 
 import { EmailContent, EmailProductInfo, NotificationType } from '@/types';
 import nodemailer from 'nodemailer';
+import { Notification, THRESHOLD_PERCENTAGE } from '../utils';
 
-export const Notification = {
-  WELCOME: 'WELCOME',
-  CHANGE_OF_STOCK: 'CHANGE_OF_STOCK',
-  LOWEST_PRICE: 'LOWEST_PRICE',
-  THRESHOLD_MET: 'THRESHOLD_MET',
-}
+// export const Notification = {
+//   WELCOME: 'WELCOME',
+//   CHANGE_OF_STOCK: 'CHANGE_OF_STOCK',
+//   LOWEST_PRICE: 'LOWEST_PRICE',
+//   THRESHOLD_MET: 'THRESHOLD_MET',
+// }
 
-export const THRESHOLD_PERCENTAGE = 40;
+// export const THRESHOLD_PERCENTAGE = 40;
 
 export async function generateEmailBody(
   product: EmailProductInfo,
